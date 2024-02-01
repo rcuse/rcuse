@@ -105,7 +105,11 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2(@types/node@20.11.15)(@vitest/ui@1.2.2)(jsdom@24.0.0)
 
-  packages/core: {}
+  packages/core:
+    dependencies:
+      '@rcuse/shared':
+        specifier: ^0.1.0
+        version: link:../shared
 
   packages/shared:
     dependencies:
