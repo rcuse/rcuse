@@ -1,0 +1,8 @@
+{
+  "name": "rcuse-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "rcuse-scripts": "bin/rcuse-scripts.mjs"
+  }
+}

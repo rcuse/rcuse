@@ -1,0 +1,22 @@
+{
+  "name": "@rcuse/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rcuse-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^5.3.0",
+    "cross-spawn": "^7.0.3",
+    "ora": "^8.0.1",
+    "rcuse-scripts": "workspace:*",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "type": "module"
+}
