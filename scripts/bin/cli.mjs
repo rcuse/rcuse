@@ -19,7 +19,7 @@ assert(
   `Executed script '${chalk.red(name)}' does not exist`
 )
 
-console.log(chalk.cyan(`sensoro-scripts: ${name}\n`))
+console.log(chalk.cyan(`rcuse: ${name}\n`))
 
 // current dir path may contain spaces
 const scriptPathAsStr = JSON.stringify(scriptsPath)
@@ -34,6 +34,6 @@ const spawn = sync(
   }
 )
 if (spawn.status !== 0) {
-  console.log(chalk.red(`sensoro-scripts: ${name} execute fail`))
+  console.log(chalk.red(`rcuse: ${name} execute fail`))
   process.exit(1)
 }
