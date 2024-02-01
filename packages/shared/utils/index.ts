@@ -1,2 +1,1 @@
-export { isClient } from './isClient';
-export { isFunction } from './isFunction';
+export * from './is';

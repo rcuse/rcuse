@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { describe, it, expect } from 'vitest';
-import { usePortal } from './index';
+import { usePortal } from './';
 
 describe('usePortal', () => {
   it('should create a portal div element and render children into it', async () => {
