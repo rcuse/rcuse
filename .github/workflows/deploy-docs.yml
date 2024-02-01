@@ -9,9 +9,9 @@ on:
 
 jobs:
   deploy-docs:
+    name: 📘 Docs
     timeout-minutes: 10
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
