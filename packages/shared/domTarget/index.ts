@@ -1,3 +1,4 @@
+import React from 'react';
 import { isClient, isFunction } from '../utils';
 
 type TargetValue<T> = T | undefined | null;
