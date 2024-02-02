@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { act, renderHook } from '@testing-library/react';
-import { nextTwoTick } from '../../../../tests/utils';
+import { nextTwoTick } from '../../../.test/nextTick';
 import { useNetwork } from '../index';
 
 describe('useNetwork', () => {
