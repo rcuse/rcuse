@@ -1,10 +1,14 @@
 import { renderHook } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import { useLatest } from './index';
+import { useLatest } from '../index';
 
 const setUp = (val: any) => renderHook((state) => useLatest(state), { initialProps: val });
 
 describe('useLatest', () => {
+  it('should be defined', () => {
+    expect(useLatest).toBeDefined();
+  });
+
   it('useLatest with basic variable should work', async () => {
     const { result, rerender } = setUp(0);
 
