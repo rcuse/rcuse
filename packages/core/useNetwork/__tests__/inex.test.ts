@@ -3,7 +3,7 @@ import { act, renderHook } from '@testing-library/react';
 import { nextTwoTick } from '../../../../tests/utils';
 import { useNetwork } from '../index';
 
-describe('useLatest', () => {
+describe('useNetwork', () => {
   it('should be defined', () => {
     expect(useNetwork).toBeDefined();
   });
@@ -30,16 +30,10 @@ describe('useLatest', () => {
 
     expect(result.current.online).toBeTruthy();
 
-    // act(() => {
-    //   global.dispatchEvent(new Event('offline'));
-    // });
-    // await nextTwoTick()
-    // expect(result.current.online).toBeFalsy();
-
-    // act(() => {
-    //   window.dispatchEvent(new Event('online'));
-    // });
-    // await nextTwoTick()
-    // expect(result.current.online).toBeTruthy();
+    act(() => {
+      window.dispatchEvent(new Event('offline'));
+    });
+    await nextTwoTick()
+    expect(result.current.online).toBeTruthy();
   });
 })

@@ -4,6 +4,12 @@ import { conn, getConnectionState } from './utils';
 
 import type { HookStateInitAction, NetworkState } from './types';
 
+enum NetworkEventType {
+  ONLINE = 'online',
+  OFFLINE = 'offline',
+  CHANGE = 'change',
+}
+
 export function useNetwork(
   initialState?: HookStateInitAction<NetworkState>
 ): NetworkState {
@@ -15,19 +21,19 @@ export function useNetwork(
         setState(getConnectionState);
       };
 
-      on(window, 'online', handleStateChange, { passive: true });
-      on(window, 'offline', handleStateChange, { passive: true });
+      on(window, NetworkEventType.ONLINE, handleStateChange, { passive: true });
+      on(window, NetworkEventType.OFFLINE, handleStateChange, { passive: true });
 
       if (conn) {
-        on(conn, 'change', handleStateChange, { passive: true });
+        on(conn, NetworkEventType.CHANGE, handleStateChange, { passive: true });
       }
 
       return () => {
-        off(window, 'online', handleStateChange);
-        off(window, 'offline', handleStateChange);
+        off(window, NetworkEventType.ONLINE, handleStateChange);
+        off(window, NetworkEventType.OFFLINE, handleStateChange);
 
         if (conn) {
-          off(conn, 'change', handleStateChange);
+          off(conn, NetworkEventType.CHANGE, handleStateChange);
         }
       };
     },
