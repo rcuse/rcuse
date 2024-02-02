@@ -3,6 +3,9 @@
  */
 export const isClient = typeof window !== 'undefined' && typeof document !== 'undefined'
 
+
+export const isNavigator = typeof navigator !== 'undefined';
+
 /**
  * 判断值是否为一个方法
  * @param val
