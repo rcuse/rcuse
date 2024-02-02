@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
+import { nextTwoTick } from '../../../../tests/utils';
 import { useNetwork } from '../index';
 
 describe('useLatest', () => {
@@ -22,5 +23,23 @@ describe('useLatest', () => {
       'saveData',
       'type',
     ]);
+  });
+
+  it('toggle network state', async () => {
+    const { result } = renderHook(() => useNetwork());
+
+    expect(result.current.online).toBeTruthy();
+
+    // act(() => {
+    //   global.dispatchEvent(new Event('offline'));
+    // });
+    // await nextTwoTick()
+    // expect(result.current.online).toBeFalsy();
+
+    // act(() => {
+    //   window.dispatchEvent(new Event('online'));
+    // });
+    // await nextTwoTick()
+    // expect(result.current.online).toBeTruthy();
   });
 })

@@ -14,5 +14,6 @@ export default defineConfig({
       resolve(__dirname, 'tests/jest-setup.ts'),
       resolve(__dirname, 'tests/setup.ts')
     ],
+    reporters: 'dot',
   }
 })
