@@ -17,6 +17,12 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^18.6.0
         version: 18.6.0
+      '@rcuse/core':
+        specifier: workspace:*
+        version: link:packages/core
+      '@rcuse/shared':
+        specifier: workspace:*
+        version: link:packages/shared
       '@rollup/plugin-json':
         specifier: ^6.1.0
         version: 6.1.0(rollup@4.9.6)

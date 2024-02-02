@@ -7,7 +7,12 @@
     "rootDir": ".",
     "module": "esnext",
     "moduleResolution": "Bundler",
-    "paths": {},
+    "paths": {
+      "@rcuse/core": ["./packages/core/index.ts"],
+      "@rcuse/core/*": ["./packages/core/*"],
+      "@rcuse/shared": ["./packages/shared/index.ts"],
+      "@rcuse/shared/*": ["./packages/shared/*"],
+    },
     "resolveJsonModule": true,
     "types": [
       "vitest"
