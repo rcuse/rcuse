@@ -2,7 +2,7 @@
   "name": "@rcuse/monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "Collection of essential React Composition Utilities",
+  "description": "Collection of essential React Utilities",
   "scripts": {
     "build:rollup": "NODE_OPTIONS=\"--max-old-space-size=6144\" rollup --config=rollup.config.ts --configPlugin=rollup-plugin-esbuild",
     "test": "vitest",
@@ -12,8 +12,8 @@
     "prepare": "husky"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "wangxingkang <https://github.com/wangxingkang>",
+  "license": "MIT",
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
     "@commitlint/cli": "^18.6.0",
