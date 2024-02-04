@@ -20,6 +20,9 @@ importers:
       '@rcuse/core':
         specifier: workspace:*
         version: link:packages/core
+      '@rcuse/metadata':
+        specifier: workspace:*
+        version: link:packages/metadata
       '@rcuse/shared':
         specifier: workspace:*
         version: link:packages/shared

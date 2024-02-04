@@ -18,3 +18,44 @@ export interface PackageManifest {
   utils?: boolean
   copy?: string[]
 }
+
+export interface RcUseFunction {
+  name: string
+  package: string
+  importPath?: string
+  lastUpdated?: number
+  category?: string
+  description?: string
+  docs?: string
+  deprecated?: boolean
+  internal?: boolean
+  component?: boolean
+  directive?: boolean
+  external?: string
+  alias?: string[]
+  related?: string[]
+}
+
+export interface RcUsePackage extends PackageManifest {
+  dir: string
+  docs?: string
+}
+
+export interface PackageIndexes {
+  packages: Record<string, RcUsePackage>
+  categories: string[]
+  functions: RcUseFunction[]
+}
+
+export interface CommitInfo {
+  functions: string[]
+  version?: string
+  hash: string
+  date: string
+  message: string
+  refs?: string
+  body?: string
+  author_name: string
+  author_email: string
+}
+
