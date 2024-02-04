@@ -12,6 +12,7 @@
       "@rcuse/core/*": ["./packages/core/*"],
       "@rcuse/shared": ["./packages/shared/index.ts"],
       "@rcuse/shared/*": ["./packages/shared/*"],
+      "@rcuse/metadata": ["./packages/metadata/index.ts"]
     },
     "resolveJsonModule": true,
     "types": [
