@@ -1,3 +1,5 @@
+import { PATHS } from './.internal/constants';
+
 (async () => {
-  console.log(122);
+  console.log(PATHS.ROOT);
 })();
