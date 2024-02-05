@@ -150,7 +150,7 @@ importers:
   packages/core:
     dependencies:
       '@rcuse/shared':
-        specifier: ^0.1.0
+        specifier: workspace:*
         version: link:../shared
 
   packages/metadata: {}
