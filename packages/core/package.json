@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/core",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Collection of essential React Utilities",
   "sideEffects": false,
   "exports": {
@@ -31,6 +31,6 @@
     "utils"
   ],
   "dependencies": {
-    "@rcuse/shared": "^0.1.0"
+    "@rcuse/shared": "workspace:*"
   }
 }
