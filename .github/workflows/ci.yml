@@ -52,3 +52,7 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - if: matrix.node == '18.x'
+        name: Playground Smoke Test
+        run: cd playgrounds && bash ./build.sh
