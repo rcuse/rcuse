@@ -1,7 +1,7 @@
 {
   "name": "@rcuse/core",
-  "version": "0.3.1",
-  "description": "Collection of essential React Utilities",
+  "version": "0.3.2",
+  "description": "Collection of essential React Composition Utilities",
   "sideEffects": false,
   "exports": {
     ".": {
@@ -32,5 +32,6 @@
   ],
   "dependencies": {
     "@rcuse/shared": "workspace:*"
-  }
+  },
+  "homepage": "https://github.com/rcuse/rcuse#readme"
 }

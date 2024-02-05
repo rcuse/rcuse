@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/shared",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Collection of essential React Utilities",
   "sideEffects": false,
   "exports": {
@@ -33,5 +33,6 @@
   "dependencies": {
     "type-fest": "^4.10.2",
     "user-agent-data-types": "^0.4.2"
-  }
+  },
+  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/shared#readme"
 }

@@ -13,6 +13,7 @@
     "publish:ci": "rcuse publish",
     "release": "bumpp --execute=\"npm run build\" --all",
     "metadata": "rcuse metadata",
+    "update": "rcuse update",
     "watch": "rcuse build-run --watch",
     "prepare": "husky"
   },
