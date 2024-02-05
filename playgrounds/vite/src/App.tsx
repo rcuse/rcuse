@@ -1,13 +1,11 @@
-import { useState } from 'react'
+import { useNetwork } from '@rcuse/core';
 
-function App() {
-  const [count] = useState(0)
+export const App = () => {
+  const { online } = useNetwork()
 
   return (
     <>
-      {count}
+      是否联网：{online + ''}
     </>
   )
 }
-
-export default App
