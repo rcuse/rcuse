@@ -10,8 +10,10 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
+    "publish:ci": "rcuse publish",
     "release": "rcuse release",
     "metadata": "rcuse metadata",
+    "update": "rcuse update",
     "prepare": "husky"
   },
   "keywords": [],
