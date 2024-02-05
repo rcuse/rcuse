@@ -13,4 +13,17 @@ export default defineConfig(({ command }) => ({
           '@rcuse/shared': resolve(__dirname, '../../packages/shared/index.ts'),
         },
       },
+  build: {
+    minify: false,
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes('@rcuse/'))
+            return 'rcuse'
+          else
+            return 'vendor'
+        },
+      },
+    },
+  },
 }))
