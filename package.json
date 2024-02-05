@@ -2,7 +2,7 @@
   "name": "@rcuse/monorepo",
   "version": "0.3.4",
   "private": true,
-  "description": "Collection of essential React Utilities",
+  "description": "Collection of React Utilities",
   "scripts": {
     "build": "rcuse build-run",
     "build:rollup": "NODE_OPTIONS=\"--max-old-space-size=6144\" rollup --config=rollup.config.ts --configPlugin=rollup-plugin-esbuild",
