@@ -17,7 +17,13 @@
 ## 🦄 使用
 
 ```ts
-import {} from '@rcuse/core';
+import { useBoolean } from '@rcuse/core';
+
+export default () => {
+  const [open, action] = useBoolean();
+  
+  // your code
+}
 ```
 
 ## 📦 安装
