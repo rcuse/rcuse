@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/monorepo",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "private": true,
   "description": "Collection of essential React Utilities",
   "scripts": {
