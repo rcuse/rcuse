@@ -7,5 +7,6 @@ export * from './usePrevious'
 export * from './useDeepCompareEffect'
 export * from './useBoolean'
 export * from './useToggle'
+export * from './useModal'
 
 export * from '@rcuse/shared'
