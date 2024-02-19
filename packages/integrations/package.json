@@ -1,0 +1,53 @@
+{
+  "name": "@rcuse/integrations",
+  "version": "0.3.7",
+  "description": "Collection of essential React Composition Utilities",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "unpkg": "./index.iife.min.js",
+  "jsdelivr": "./index.iife.min.js",
+  "types": "./index.d.cts",
+  "keywords": [
+    "react",
+    "react-use",
+    "utils"
+  ],
+  "author": "wangxingkang <https://github.com/wangxingkang>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcuse/rcuse.git",
+    "directory": "packages/integrations"
+  },
+  "bugs": {
+    "url": "https://github.com/rcuse/rcuse/issues"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./*": "./*",
+    "./useNProgress": {
+      "import": "./useNProgress.mjs",
+      "require": "./useNProgress.cjs"
+    }
+  },
+  "peerDependencies": {
+    "nprogress": "*"
+  },
+  "peerDependenciesMeta": {
+    "nprogress": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@rcuse/core": "workspace:*",
+    "@rcuse/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.3",
+    "nprogress": "^0.2.0"
+  }
+}
