@@ -154,6 +154,13 @@ importers:
         version: link:../shared
 
   packages/integrations:
+    dependencies:
+      '@rcuse/core':
+        specifier: workspace:*
+        version: link:../core
+      '@rcuse/shared':
+        specifier: workspace:*
+        version: link:../shared
     devDependencies:
       '@types/nprogress':
         specifier: ^0.2.3

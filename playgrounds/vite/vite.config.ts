@@ -11,6 +11,7 @@ export default defineConfig(({ command }) => ({
         alias: {
           '@rcuse/core': resolve(__dirname, '../../packages/core/index.ts'),
           '@rcuse/shared': resolve(__dirname, '../../packages/shared/index.ts'),
+          '@rcuse/integrations': resolve(__dirname, '../../packages/integrations/index.ts'),
         },
       },
   build: {

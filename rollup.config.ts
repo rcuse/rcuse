@@ -1,7 +1,9 @@
+import { resolve } from 'node:path'
 import esbuild from 'rollup-plugin-esbuild'
 import dts from 'rollup-plugin-dts'
 import json from '@rollup/plugin-json'
 import { PluginPure as pure } from 'rollup-plugin-pure'
+import fg from 'fast-glob'
 import { packages } from './meta/packages'
 
 import type { Options as ESBuildOptions } from 'rollup-plugin-esbuild'
@@ -37,6 +39,7 @@ for (const pkg of packages) {
     iife,
     cjs,
     mjs,
+    submodules,
     dts,
     target = 'es2018'
   } = pkg;
@@ -49,6 +52,9 @@ for (const pkg of packages) {
 
   const iifeName = 'RcUse'
   const functionNames = ['index']
+
+  if (submodules)
+    functionNames.push(...fg.sync('*/index.ts', { cwd: resolve(`packages/${name}`) }).map(i => i.split('/')[0]))
 
   for (const fn of functionNames) {
     const input = fn === 'index'
