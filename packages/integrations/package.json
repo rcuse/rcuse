@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/integrations",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Integration wrappers for utility libraries",
   "main": "./index.cjs",
   "module": "./index.mjs",
@@ -49,5 +49,6 @@
   "devDependencies": {
     "@types/nprogress": "^0.2.3",
     "nprogress": "^0.2.0"
-  }
+  },
+  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/integrations#readme"
 }
