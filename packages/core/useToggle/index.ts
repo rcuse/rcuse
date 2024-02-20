@@ -30,8 +30,6 @@ function useToggle<D, R>(defaultValue: D = false as unknown as D, reverseValue?:
       setLeft,
       setRight,
     };
-    // useToggle ignore value change
-    // }, [defaultValue, reverseValue]);
   }, []);
 
   return [state, actions];
