@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/shared",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "description": "Collection of essential React Utilities",
   "sideEffects": false,
   "exports": {
