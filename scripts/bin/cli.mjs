@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import { join, dirname } from 'path';
-import { existsSync } from 'fs';
+import { join, dirname } from 'node:path';
+import { existsSync } from 'node:fs';
+import assert from 'node:assert';
+import { fileURLToPath } from 'node:url';
 import { sync } from 'cross-spawn';
 import chalk from 'chalk';
-import assert from 'assert';
-import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -19,7 +19,7 @@ assert(
   `Executed script '${chalk.red(name)}' does not exist`
 )
 
-console.log(chalk.cyan(`rcuse: ${name}\n`))
+console.log(chalk.cyan(`walrus: ${name}\n`))
 
 // current dir path may contain spaces
 const scriptPathAsStr = JSON.stringify(scriptsPath)
@@ -34,6 +34,6 @@ const spawn = sync(
   }
 )
 if (spawn.status !== 0) {
-  console.log(chalk.red(`rcuse: ${name} execute fail`))
+  console.log(chalk.red(`walrus: ${name} execute fail`))
   process.exit(1)
 }

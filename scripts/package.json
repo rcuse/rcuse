@@ -1,8 +1,8 @@
 {
-  "name": "rcuse-scripts",
+  "name": "walrus",
   "version": "1.0.0",
   "private": true,
   "bin": {
-    "rcuse": "bin/cli.mjs"
+    "walrus": "bin/cli.mjs"
   }
 }
