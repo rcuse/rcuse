@@ -13,5 +13,6 @@ export * from './useMap'
 export * from './useUpdate'
 export * from './useGetSet'
 export * from './useGetSetState'
+export * from './useUpdateEffect'
 
 export * from '@rcuse/shared'
