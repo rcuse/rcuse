@@ -10,7 +10,8 @@ export * from './useToggle'
 export * from './useModal'
 export * from './useEffectOnce'
 export * from './useMap'
-export * from './useUpdate';
+export * from './useUpdate'
 export * from './useGetSet'
+export * from './useGetSetState'
 
 export * from '@rcuse/shared'
