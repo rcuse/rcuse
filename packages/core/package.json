@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/core",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Collection of essential React Composition Utilities",
   "sideEffects": false,
   "exports": {
