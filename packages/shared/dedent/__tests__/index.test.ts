@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest'
 import { dedent } from '../../dedent'
-import { indent } from '../../indent'
 
 describe('dedent', () => {
   it('空字符串正常', () => {

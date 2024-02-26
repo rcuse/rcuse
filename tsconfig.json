@@ -33,7 +33,7 @@
     "*.ts",
     "packages",
     "vitest.config.ts",
-    "./tests/jest-setup.ts"
+    "./packages/.test/setup.ts"
   ],
   "exclude": [
     "node_modules",
