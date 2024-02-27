@@ -25,9 +25,9 @@
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
     "@rcuse/core": "workspace:*",
+    "@rcuse/integrations": "workspace:*",
     "@rcuse/metadata": "workspace:*",
     "@rcuse/shared": "workspace:*",
-    "@rcuse/integrations": "workspace:*",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-replace": "^5.0.5",
     "@testing-library/jest-dom": "^6.4.1",
@@ -40,7 +40,7 @@
     "chalk": "^5.3.0",
     "consola": "^3.2.3",
     "cross-spawn": "^7.0.3",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
     "export-size": "^0.7.0",
     "fake-indexeddb": "^5.0.2",
@@ -54,8 +54,7 @@
     "node-fetch": "^3.3.2",
     "ora": "^8.0.1",
     "pnpm": "^8.15.4",
-    "prettier": "^3.2.4",
-    "walrus": "workspace:*",
+    "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
@@ -67,8 +66,13 @@
     "taze": "^0.13.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "vitest": "^1.3.1"
+    "vite": "^5.1.4",
+    "vitest": "^1.3.1",
+    "walrus": "workspace:*"
   },
   "type": "module",
-  "packageManager": "pnpm@8.15.4"
+  "packageManager": "pnpm@8.15.4",
+  "resolutions": {
+    "vite": "^5.1.4"
+  }
 }
