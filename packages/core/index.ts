@@ -14,5 +14,6 @@ export * from './useUpdate'
 export * from './useGetSet'
 export * from './useGetSetState'
 export * from './useUpdateEffect'
+export * from './useInterval'
 
 export * from '@rcuse/shared'
