@@ -176,9 +176,6 @@ importers:
       '@rcuse/core':
         specifier: workspace:*
         version: link:../core
-      '@rcuse/shared':
-        specifier: workspace:*
-        version: link:../shared
       '@types/geojson':
         specifier: '*'
         version: 7946.0.14
