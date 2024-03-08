@@ -47,8 +47,8 @@
     }
   },
   "dependencies": {
-    "@rcuse/core": "workspace:*",
-    "@rcuse/shared": "workspace:*"
+    "@types/geojson": "*",
+    "@rcuse/core": "workspace:*"
   },
   "devDependencies": {
     "@types/supercluster": "^7.1.3",
