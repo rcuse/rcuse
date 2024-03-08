@@ -78,7 +78,7 @@ describe('useSupercluster', () => {
     }
 
     const { findByText } = render(<App />)
-    const clusterNode = await findByText('points: 4')
+    const clusterNode = await findByText('points:4')
     expect(clusterNode).toBeInTheDocument()
   })
 })
