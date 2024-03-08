@@ -25,8 +25,8 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
     "@antfu/ni": "^0.21.12",
-    "@commitlint/cli": "^19.0.0",
-    "@commitlint/config-conventional": "^19.0.0",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
     "@rcuse/core": "workspace:*",
     "@rcuse/integrations": "workspace:*",
     "@rcuse/metadata": "workspace:*",
