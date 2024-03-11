@@ -18,7 +18,7 @@
     "metadata": "walrus metadata",
     "update": "walrus update",
     "watch": "walrus build-run --watch",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "author": "wangxingkang <https://github.com/wangxingkang>",
   "license": "MIT",
