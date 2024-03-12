@@ -36,6 +36,7 @@
   },
   "peerDependencies": {
     "nprogress": "*",
+    "screenfull": "*",
     "supercluster": ">=8"
   },
   "peerDependenciesMeta": {
@@ -44,16 +45,20 @@
     },
     "supercluster": {
       "optional": true
+    },
+    "screenfull": {
+      "optional": true
     }
   },
   "dependencies": {
-    "@types/geojson": "*",
-    "@rcuse/core": "workspace:*"
+    "@rcuse/core": "workspace:*",
+    "@types/geojson": "*"
   },
   "devDependencies": {
-    "@types/supercluster": "^7.1.3",
     "@types/nprogress": "^0.2.3",
+    "@types/supercluster": "^7.1.3",
     "nprogress": "^0.2.0",
+    "screenfull": "^6.0.2",
     "supercluster": "^8.0.1"
   },
   "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/integrations#readme"
