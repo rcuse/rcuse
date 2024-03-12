@@ -29,9 +29,17 @@
       "require": "./index.cjs"
     },
     "./*": "./*",
+    "./useFullscreen": {
+      "import": "./useFullscreen.mjs",
+      "require": "./useFullscreen.cjs"
+    },
     "./useNProgress": {
       "import": "./useNProgress.mjs",
       "require": "./useNProgress.cjs"
+    },
+    "./useSupercluster": {
+      "import": "./useSupercluster.mjs",
+      "require": "./useSupercluster.cjs"
     }
   },
   "peerDependencies": {
