@@ -1,26 +1,30 @@
-import type React from 'react'
-import { useCallback, useState } from 'react'
-import { useLatest } from '../useLatest'
+import { useCallback, useRef, useState } from 'react'
+import type { Dispatch, SetStateAction } from 'react'
+import { resolveHookState } from '../helpers/resolveHookState'
 
 type GetStateAction<S> = () => S
 
 function useGetState<S>(
   initialState: S | (() => S),
-): [S, React.Dispatch<React.SetStateAction<S>>, GetStateAction<S>]
+): [S, Dispatch<SetStateAction<S>>, GetStateAction<S>]
 function useGetState<S = undefined>(): [
   S | undefined,
-  React.Dispatch<React.SetStateAction<S | undefined>>,
+  Dispatch<SetStateAction<S | undefined>>,
   GetStateAction<S | undefined>,
 ]
 function useGetState<S>(initialState?: S) {
-  const [state, setState] = useState(initialState)
-  const stateRef = useLatest(state)
+  const [state, setState] = useState<S>(initialState!)
+  const stateRef = useRef<S>(state)
+  stateRef.current = state
 
-  const getState = useCallback(() => stateRef.current, [])
+  const _setState = useCallback<Dispatch<SetStateAction<S>>>((state) => {
+    stateRef.current = resolveHookState(state, stateRef.current)
+    setState(stateRef.current)
+  }, [])
 
-  return [state, setState, getState]
+  const getState = useCallback<GetStateAction<S>>(() => stateRef.current, [])
+
+  return [state, _setState, getState]
 }
 
-export {
-  useGetState,
-}
+export { useGetState }
