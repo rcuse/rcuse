@@ -8,6 +8,7 @@
 <a href="https://www.npmjs.com/package/@rcuse/core" target="__blank"><img src="https://img.shields.io/npm/v/@rcuse/core?color=a1b858&label=" alt="NPM version"></a>
 <a href="https://www.npmjs.com/package/@rcuse/core" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@rcuse/core?color=50a36f&label="></a>
 <a href="https://github.com/rcuse/rcuse" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/rcuse/rcuse?style=social"></a>
+<a href="https://github.com/antfu/eslint-config" target="__blank"><img alt="code style" src="https://antfu.me/badge-code-style.svg"></a>
 </p>
 
 ## 🚀 特性
