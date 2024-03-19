@@ -1,6 +1,6 @@
 export * from './domTarget'
 export * from './utils'
-export * from './isEqual'
 export * from './uuid'
 export * from './dedent'
 export * from './indent'
+export * from 'radash'
