@@ -19,5 +19,6 @@ export * from './useMemoizedFn'
 export * from './useClickAway'
 export * from './useFavicon'
 export * from './useBeforeUnload'
+export * from './useControllableValue'
 
 export * from '@rcuse/shared'
