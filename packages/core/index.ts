@@ -17,5 +17,6 @@ export * from './useUpdateEffect'
 export * from './useInterval'
 export * from './useMemoizedFn'
 export * from './useClickAway'
+export * from './useFavicon'
 
 export * from '@rcuse/shared'
