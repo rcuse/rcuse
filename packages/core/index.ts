@@ -22,5 +22,6 @@ export * from './useBeforeUnload'
 export * from './useControllableValue'
 export * from './useTitle'
 export * from './useEventListener'
+export * from './useDocumentVisibility'
 
 export * from '@rcuse/shared'
