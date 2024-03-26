@@ -21,5 +21,6 @@ export * from './useFavicon'
 export * from './useBeforeUnload'
 export * from './useControllableValue'
 export * from './useTitle'
+export * from './useEventListener'
 
 export * from '@rcuse/shared'
