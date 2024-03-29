@@ -28,5 +28,6 @@ export * from './useMount'
 export * from './useMountedState'
 export * from './useSetState'
 export * from './useFocusWithin'
+export * from './useLongPress'
 
 export * from '@rcuse/shared'
