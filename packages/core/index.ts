@@ -26,5 +26,6 @@ export * from './useDocumentVisibility'
 export * from './useRendersCount'
 export * from './useMount'
 export * from './useMountedState'
+export * from './useSetState'
 
 export * from '@rcuse/shared'
