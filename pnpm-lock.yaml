@@ -180,6 +180,9 @@ importers:
         specifier: '*'
         version: 7946.0.14
     devDependencies:
+      '@pansy/copy-to-clipboard':
+        specifier: ^1.0.8
+        version: registry.npmjs.org/@pansy/copy-to-clipboard@1.0.8
       '@types/nprogress':
         specifier: ^0.2.3
         version: 0.2.3
@@ -7574,4 +7577,18 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  registry.npmjs.org/@pansy/copy-to-clipboard@1.0.8:
+    resolution: {integrity: sha512-9e7FvnZ0UM9aIn1fxXZTL/Eq4RO/CDY4UseWniFRQzWiJqST18kWXocSU1TOVzZFhX/epo35S8F5/DCNd2sPMg==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/@pansy/copy-to-clipboard/-/copy-to-clipboard-1.0.8.tgz}
+    name: '@pansy/copy-to-clipboard'
+    version: 1.0.8
+    dependencies:
+      '@pansy/toggle-selection': registry.npmjs.org/@pansy/toggle-selection@1.0.8
+    dev: true
+
+  registry.npmjs.org/@pansy/toggle-selection@1.0.8:
+    resolution: {integrity: sha512-h7SB3XKEt6qR0iGBiolpa/ZJEkl63I/rBONvyOo5Xx4WdY/bVjYU5XwS/9RrhmUoVqfZsJEjzNI+aMNLXyMOmg==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/@pansy/toggle-selection/-/toggle-selection-1.0.8.tgz}
+    name: '@pansy/toggle-selection'
+    version: 1.0.8
     dev: true

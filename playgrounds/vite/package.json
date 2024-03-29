@@ -11,6 +11,7 @@
     "@rcuse/core": "file:../../packages/core/dist",
     "@rcuse/shared": "file:../../packages/shared/dist",
     "@rcuse/integrations": "file:../../packages/integrations/dist",
+    "@pansy/copy-to-clipboard": "^1.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "nprogress": "^0.2.0"

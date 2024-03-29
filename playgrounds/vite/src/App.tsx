@@ -1,12 +1,18 @@
 import { useRef } from 'react'
 import { useNetwork } from '@rcuse/core'
-import { useFullscreen, useNProgress } from '@rcuse/integrations'
+import { useCopyToClipboard, useFullscreen, useNProgress } from '@rcuse/integrations'
 
 export function App() {
   const ref = useRef<HTMLDivElement>(null)
   const { online } = useNetwork()
   const { isLoading, progress, start, done } = useNProgress()
   const [isFullscreen, { enterFullscreen, exitFullscreen, toggleFullscreen }] = useFullscreen(ref)
+
+  const [, copy] = useCopyToClipboard()
+
+  const handleCopy = () => {
+    copy('hello world!')
+  }
 
   return (
     <>
@@ -36,6 +42,8 @@ export function App() {
           </button>
         </div>
       </div>
+      <br />
+      <button onClick={handleCopy}>拷贝文案</button>
     </>
   )
 }
