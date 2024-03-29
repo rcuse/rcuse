@@ -24,5 +24,7 @@ export * from './useTitle'
 export * from './useEventListener'
 export * from './useDocumentVisibility'
 export * from './useRendersCount'
+export * from './useMount'
+export * from './useMountedState'
 
 export * from '@rcuse/shared'
