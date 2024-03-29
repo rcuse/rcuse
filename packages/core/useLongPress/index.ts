@@ -4,13 +4,7 @@ import type { BasicTarget } from '@rcuse/core'
 import { useLatest } from '../useLatest'
 import { useEffectWithTarget } from '../helpers/useEffectWithTarget'
 
-type EventType = MouseEvent | TouchEvent
-export interface UseLongPressOptions {
-  delay?: number
-  moveThreshold?: { x?: number, y?: number }
-  onClick?: (event: EventType) => void
-  onLongPressEnd?: (event: EventType) => void
-}
+import type { EventType, UseLongPressOptions } from './types'
 
 const touchSupported
   = isClient
@@ -20,8 +14,14 @@ const touchSupported
 export function useLongPress(
   onLongPress: (event: EventType) => void,
   target: BasicTarget,
-  { delay = 300, moveThreshold, onClick, onLongPressEnd }: UseLongPressOptions = {},
+  opts: UseLongPressOptions = {},
 ) {
+  const {
+    delay = 300,
+    moveThreshold,
+    onClick,
+    onLongPressEnd,
+  } = opts
   const onLongPressRef = useLatest(onLongPress)
   const onClickRef = useLatest(onClick)
   const onLongPressEndRef = useLatest(onLongPressEnd)
@@ -114,7 +114,7 @@ export function useLongPress(
       }
       else {
         on(targetElement, 'touchstart', onStart)
-        on(targetElement, 'touchstart', onEndWithClick)
+        on(targetElement, 'touchend', onEndWithClick)
         if (hasMoveThreshold)
           on(targetElement, 'touchmove', onMove)
       }
