@@ -1,4 +1,4 @@
-import { isClient } from '@rcuse/core'
+import { isClient } from '@rcuse/shared'
 
 export interface ConfigurableDocument {
   /*

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isClient } from '@rcuse/core'
+import { isClient } from '@rcuse/shared'
 import { useEventListener } from '../useEventListener'
 
 type VisibilityState = 'hidden' | 'visible' | 'prerender' | undefined

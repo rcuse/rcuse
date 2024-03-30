@@ -1,6 +1,6 @@
-import { getTargetElement } from '@rcuse/core'
+import { getTargetElement } from '@rcuse/shared'
 
-import type { BasicTarget } from '@rcuse/core'
+import type { BasicTarget } from '@rcuse/shared'
 
 declare type TargetValue<T> = T | undefined | null
 

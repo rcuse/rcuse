@@ -1,8 +1,8 @@
 import { useRef } from 'react'
-import { getTargetElement } from '@rcuse/core'
+import { getTargetElement } from '@rcuse/shared'
 
 import type { DependencyList, EffectCallback, useEffect, useLayoutEffect } from 'react'
-import type { BasicTarget } from '@rcuse/core'
+import type { BasicTarget } from '@rcuse/shared'
 import { useUnmount } from '../useUnmount'
 import { depsAreSame } from './depsAreSame'
 

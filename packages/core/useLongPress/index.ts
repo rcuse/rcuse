@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { getTargetElement, isClient, off, on } from '@rcuse/shared'
-import type { BasicTarget } from '@rcuse/core'
+import type { BasicTarget } from '@rcuse/shared'
 import { useLatest } from '../useLatest'
 import { useEffectWithTarget } from '../helpers/useEffectWithTarget'
 
