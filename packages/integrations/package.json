@@ -41,6 +41,10 @@
       "import": "./useSupercluster.mjs",
       "require": "./useSupercluster.cjs"
     },
+    "./useScrollbarWidth": {
+      "import": "./useScrollbarWidth.mjs",
+      "require": "./useScrollbarWidth.cjs"
+    },
     "./useCopyToClipboard": {
       "import": "./useCopyToClipboard.mjs",
       "require": "./useCopyToClipboard.cjs"
@@ -48,12 +52,16 @@
   },
   "peerDependencies": {
     "@pansy/copy-to-clipboard": "*",
+    "@pansy/scrollbar-width": "*",
     "nprogress": "*",
     "screenfull": "*",
     "supercluster": ">=8"
   },
   "peerDependenciesMeta": {
     "@pansy/copy-to-clipboard": {
+      "optional": true
+    },
+    "@pansy/scrollbar-width": {
       "optional": true
     },
     "nprogress": {
@@ -74,6 +82,7 @@
     "@types/nprogress": "^0.2.3",
     "@types/supercluster": "^7.1.3",
     "@pansy/copy-to-clipboard": "^1.0.8",
+    "@pansy/scrollbar-width": "^1.0.0",
     "nprogress": "^0.2.0",
     "screenfull": "^6.0.2",
     "supercluster": "^8.0.1"
