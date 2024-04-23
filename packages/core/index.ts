@@ -30,5 +30,6 @@ export * from './useSetState'
 export * from './useFocusWithin'
 export * from './useLongPress'
 export * from './useKeyPress'
+export * from './useRafState'
 
 export * from '@rcuse/shared'
