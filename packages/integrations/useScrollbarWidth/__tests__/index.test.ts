@@ -1,10 +1,10 @@
 import { act, renderHook } from '@testing-library/react'
 import { afterEach, beforeAll, describe, expect, it } from 'vitest'
 import { scrollbarWidth } from '@pansy/scrollbar-width'
-import { replaceRaf } from 'raf-stub'
-import { useScrollbarWidth } from '../'
 
 // @ts-expect-error 该库未提供类型定义
+import { replaceRaf } from 'raf-stub'
+import { useScrollbarWidth } from '../'
 
 declare let requestAnimationFrame: {
   add: (cb: Function) => number
