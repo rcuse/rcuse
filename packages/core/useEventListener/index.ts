@@ -10,6 +10,7 @@ interface Options<T extends Target = Target> {
   capture?: boolean
   once?: boolean
   passive?: boolean
+  enable?: boolean
 }
 
 export function useEventListener<K extends keyof HTMLElementEventMap>(
@@ -35,10 +36,15 @@ export function useEventListener<K extends keyof WindowEventMap>(
 export function useEventListener(eventName: string, handler: noop, options: Options): void
 
 export function useEventListener(eventName: string, handler: noop, options: Options = {}) {
+  const { enable = true } = options
+
   const handlerRef = useLatest(handler)
 
   useEffectWithTarget(
     () => {
+      if (!enable)
+        return
+
       const targetElement = getTargetElement(options.target, window)
       if (!targetElement?.addEventListener)
         return
@@ -59,7 +65,7 @@ export function useEventListener(eventName: string, handler: noop, options: Opti
         })
       }
     },
-    [eventName, options.capture, options.once, options.passive],
+    [eventName, options.capture, options.once, options.passive, enable],
     options.target,
   )
 }
