@@ -32,5 +32,6 @@ export * from './useLongPress'
 export * from './useKeyPress'
 export * from './useRafState'
 export * from './useScroll'
+export * from './useLocalStorageState'
 
 export * from '@rcuse/shared'
