@@ -4,10 +4,10 @@
   "private": true,
   "description": "Collection of essential React Utilities",
   "scripts": {
-    "start": "pnpm -r --filter website run start",
     "build": "walrus build-run",
-    "build:website": "pnpm -r --filter website run build",
     "build:rollup": "NODE_OPTIONS=\"--max-old-space-size=6144\" rollup --config=rollup.config.ts --configPlugin=rollup-plugin-esbuild",
+    "docs": "pnpm -r --filter website run start",
+    "docs:build": "pnpm -r --filter website run build",
     "clean": "rimraf --glob dist types \"packages/*/dist\"",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
