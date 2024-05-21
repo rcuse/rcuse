@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'React Use',
-  tagline: 'Collection of essential React Utilities',
+  title: 'ReactUse',
+  tagline: 'React 的基本组合工具集合',
   favicon: 'img/logo.svg',
 
   // Set the production url of your site here
@@ -16,7 +16,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'reactuse', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -58,7 +58,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'React Use',
+      title: 'ReactUse',
       logo: {
         alt: 'React Use Logo',
         src: 'img/logo.svg',
@@ -66,9 +66,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'guideSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guide',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
