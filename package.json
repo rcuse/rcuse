@@ -4,7 +4,9 @@
   "private": true,
   "description": "Collection of essential React Utilities",
   "scripts": {
+    "start": "pnpm -r --filter website run start",
     "build": "walrus build-run",
+    "build:website": "pnpm -r --filter website run build",
     "build:rollup": "NODE_OPTIONS=\"--max-old-space-size=6144\" rollup --config=rollup.config.ts --configPlugin=rollup-plugin-esbuild",
     "clean": "rimraf --glob dist types \"packages/*/dist\"",
     "test": "vitest",
@@ -72,8 +74,8 @@
     "taze": "^0.13.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "vite": "^5.1.4",
-    "vitest": "^1.3.1",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0",
     "walrus": "workspace:*"
   },
   "type": "module",
