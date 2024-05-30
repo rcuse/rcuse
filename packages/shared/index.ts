@@ -4,6 +4,7 @@ export * from './utils'
 export * from './uuid'
 export * from './dedent'
 export * from './indent'
+export { default as raf } from './raf'
 export {
   // Array
   alphabetical,
