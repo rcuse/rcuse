@@ -34,5 +34,6 @@ export * from './useRafState'
 export * from './useScroll'
 export * from './useLocalStorageState'
 export * from './useSessionStorageState'
+export * from './useMutationObserver'
 
 export * from '@rcuse/shared'
