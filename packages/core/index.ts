@@ -36,5 +36,6 @@ export * from './useLocalStorageState'
 export * from './useSessionStorageState'
 export * from './useMutationObserver'
 export * from './useResizeObserver'
+export * from './useTimeout'
 
 export * from '@rcuse/shared'
