@@ -39,5 +39,6 @@ export * from './useResizeObserver'
 export * from './useTimeout'
 export * from './useClipboard'
 export * from './useIdle'
+export * from './useIsomorphicEffect'
 
 export * from '@rcuse/shared'
