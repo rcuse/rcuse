@@ -40,5 +40,6 @@ export * from './useTimeout'
 export * from './useClipboard'
 export * from './useIdle'
 export * from './useIsomorphicEffect'
+export * from './useEyeDropper'
 
 export * from '@rcuse/shared'
