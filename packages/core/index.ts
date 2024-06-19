@@ -38,5 +38,6 @@ export * from './useMutationObserver'
 export * from './useResizeObserver'
 export * from './useTimeout'
 export * from './useClipboard'
+export * from './useIdle'
 
 export * from '@rcuse/shared'

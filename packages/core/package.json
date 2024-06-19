@@ -2,6 +2,22 @@
   "name": "@rcuse/core",
   "version": "0.20.0",
   "description": "Collection of essential React Composition Utilities",
+  "author": "wangxingkang <https://github.com/wangxingkang>",
+  "license": "MIT",
+  "homepage": "https://github.com/rcuse/rcuse#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcuse/rcuse.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/rcuse/rcuse/issues"
+  },
+  "keywords": [
+    "react",
+    "react-use",
+    "utils"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -15,23 +31,7 @@
   "unpkg": "./index.iife.min.js",
   "jsdelivr": "./index.iife.min.js",
   "types": "./index.d.cts",
-  "author": "wangxingkang <https://github.com/wangxingkang>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rcuse/rcuse.git",
-    "directory": "packages/core"
-  },
-  "bugs": {
-    "url": "https://github.com/rcuse/rcuse/issues"
-  },
-  "license": "MIT",
-  "keywords": [
-    "react",
-    "react-use",
-    "utils"
-  ],
   "dependencies": {
     "@rcuse/shared": "workspace:*"
-  },
-  "homepage": "https://github.com/rcuse/rcuse#readme"
+  }
 }
