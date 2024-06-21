@@ -42,5 +42,5 @@ export * from './useIdle'
 export * from './useIsomorphicEffect'
 export * from './useEyeDropper'
 export * from './useValidatedState'
-
+export * from './useId'
 export * from '@rcuse/shared'
