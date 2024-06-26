@@ -216,8 +216,8 @@ importers:
         specifier: ^12.1.0
         version: 12.1.0
       type-fest:
-        specifier: ^4.10.2
-        version: 4.10.2
+        specifier: ^4.20.1
+        version: 4.20.1
       user-agent-data-types:
         specifier: ^0.4.2
         version: 0.4.2
@@ -10834,7 +10834,7 @@ packages:
       outvariant: 1.4.2
       path-to-regexp: 6.2.1
       strict-event-emitter: 0.5.1
-      type-fest: 4.10.2
+      type-fest: 4.20.1
       typescript: 5.3.3
       yargs: 17.7.2
     dev: true
@@ -14213,8 +14213,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.10.2:
-    resolution: {integrity: sha512-anpAG63wSpdEbLwOqH8L84urkL6PiVIov3EMmgIhhThevh9aiMQov+6Btx0wldNcvm4wV+e2/Rt1QdDwKHFbHw==}
+  /type-fest@4.20.1:
+    resolution: {integrity: sha512-R6wDsVsoS9xYOpy8vgeBlqpdOyzJ12HNfQhC/aAKWM3YoCV9TtunJzh/QpkMgeDhkoynDcw5f1y+qF9yc/HHyg==}
     engines: {node: '>=16'}
 
   /type-is@1.6.18:
