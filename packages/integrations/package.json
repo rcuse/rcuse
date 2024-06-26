@@ -1,6 +1,6 @@
 {
   "name": "@rcuse/integrations",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "description": "Integration wrappers for utility libraries",
   "main": "./index.cjs",
   "module": "./index.mjs",
