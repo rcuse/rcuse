@@ -17,7 +17,8 @@
     },
     "resolveJsonModule": true,
     "types": [
-      "vitest"
+      "vitest",
+      "@testing-library/jest-dom"
     ],
     "strict": true,
     "strictFunctionTypes": true,
