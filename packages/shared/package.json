@@ -2,20 +2,9 @@
   "name": "@rcuse/shared",
   "version": "0.22.0",
   "description": "Collection of essential React Utilities",
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "require": "./index.cjs"
-    },
-    "./*": "./*"
-  },
-  "main": "./index.cjs",
-  "module": "./index.mjs",
-  "unpkg": "./index.iife.min.js",
-  "jsdelivr": "./index.iife.min.js",
-  "types": "./index.d.cts",
   "author": "wangxingkang <https://github.com/wangxingkang>",
+  "license": "MIT",
+  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/shared#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rcuse/rcuse.git",
@@ -29,11 +18,22 @@
     "react-use",
     "utils"
   ],
-  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "unpkg": "./index.iife.min.js",
+  "jsdelivr": "./index.iife.min.js",
+  "types": "./index.d.cts",
   "dependencies": {
     "radash": "^12.1.0",
-    "type-fest": "^4.10.2",
+    "type-fest": "^4.20.1",
     "user-agent-data-types": "^0.4.2"
-  },
-  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/shared#readme"
+  }
 }
