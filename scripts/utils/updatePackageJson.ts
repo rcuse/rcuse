@@ -1,12 +1,12 @@
 import { join } from 'node:path'
 import fs from 'fs-extra'
 import { packages } from '../../meta/packages'
-import { PATHS } from '../.internal/constants';
+import { PATHS } from '../.internal/constants'
 
 export async function updatePackageJSON() {
   const { version } = await fs.readJSON('package.json')
 
-  for (const { name, description, author, submodules, iife } of packages) {
+  for (const { name, description, author, iife } of packages) {
     const packageDir = join(PATHS.PACKAGES, name)
     const packageJSONPath = join(packageDir, 'package.json')
     const packageJSON = await fs.readJSON(packageJSONPath)

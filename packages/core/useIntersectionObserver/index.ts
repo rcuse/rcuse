@@ -6,9 +6,13 @@ interface State {
 }
 
 interface Options {
+  /** 根元素 */
   root?: Element | Document | null
   isEnabled?: boolean
   rootMargin?: string
+  /**
+   * 指定交叉比例，决定何时触发回调函数
+   */
   threshold?: number | number[]
   freezeOnceVisible?: boolean
   onChange?: (isIntersecting: boolean, entry: IntersectionObserverEntry) => void
