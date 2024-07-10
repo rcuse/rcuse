@@ -84,9 +84,6 @@
     "vitest": "^1.6.0",
     "walrus": "workspace:*"
   },
-  "resolutions": {
-    "vite": "^5.1.4"
-  },
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint --cache --fix"

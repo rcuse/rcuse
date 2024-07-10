@@ -1,6 +1,6 @@
 {
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,20 +8,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rcuse/core": "file:../../packages/core/dist",
-    "@rcuse/shared": "file:../../packages/shared/dist",
-    "@rcuse/integrations": "file:../../packages/integrations/dist",
     "@pansy/copy-to-clipboard": "^1.0.8",
+    "@rcuse/core": "file:../../packages/core/dist",
+    "@rcuse/integrations": "file:../../packages/integrations/dist",
+    "@rcuse/shared": "file:../../packages/shared/dist",
+    "nprogress": "^0.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "nprogress": "^0.2.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.2.11"
   },
   "resolutions": {
     "@rcuse/core": "file:../../packages/core/dist",
