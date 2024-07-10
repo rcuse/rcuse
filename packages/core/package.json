@@ -32,6 +32,7 @@
   "jsdelivr": "./index.iife.min.js",
   "types": "./index.d.cts",
   "dependencies": {
-    "@rcuse/shared": "workspace:*"
+    "@rcuse/shared": "workspace:*",
+    "@zag-js/element-size": "^0.61.0"
   }
 }
