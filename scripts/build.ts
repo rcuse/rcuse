@@ -6,9 +6,10 @@ import { fileURLToPath } from 'node:url'
 import fs from 'fs-extra'
 import fg from 'fast-glob'
 import { consola } from 'consola'
+import YAML from 'yaml'
 import { packages } from '../meta/packages'
 import { version } from '../package.json'
-import { PATHS } from './.internal/constants';
+import { PATHS } from './.internal/constants'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const watch = process.argv.includes('--watch')
@@ -30,15 +31,17 @@ const FILES_COPY_LOCAL = [
 assert(process.cwd() !== __dirname)
 
 async function buildMetaFiles() {
+  const workspaceData = YAML.parse(await fs.readFile(path.resolve(PATHS.ROOT, 'pnpm-workspace.yaml'), 'utf-8'))
+
   for (const { name } of packages) {
     const packageRoot = path.resolve(PATHS.PACKAGES, name)
     const packageDist = path.resolve(packageRoot, 'dist')
 
     if (name === 'core')
-    await fs.copyFile(path.join(PATHS.ROOT, 'README.md'), path.join(packageDist, 'README.md'))
+      await fs.copyFile(path.join(PATHS.ROOT, 'README.md'), path.join(packageDist, 'README.md'))
 
     for (const file of FILES_COPY_ROOT)
-    await fs.copyFile(path.join(PATHS.ROOT, file), path.join(packageDist, file))
+      await fs.copyFile(path.join(PATHS.ROOT, file), path.join(packageDist, file))
 
     const files = await fg(FILES_COPY_LOCAL, { cwd: packageRoot })
     for (const file of files)
@@ -46,9 +49,16 @@ async function buildMetaFiles() {
 
     const packageJSON = await fs.readJSON(path.join(packageRoot, 'package.json'))
 
-    for (const key of Object.keys(packageJSON.dependencies || {})) {
-      if (key.startsWith('@rcuse/'))
+    for (const [key, value] of Object.keys(packageJSON.dependencies || {})) {
+      if (key.startsWith('@rcuse/')) {
         packageJSON.dependencies[key] = version
+      }
+      else if ((value as string).startsWith('catalog:')) {
+        const resolved = workspaceData.catalog[key as string]
+        if (!resolved)
+          throw new Error(`Cannot resolve catalog entry for ${key}`)
+        packageJSON.dependencies[key] = resolved
+      }
     }
     await fs.writeJSON(path.join(packageDist, 'package.json'), packageJSON, { spaces: 2 })
   }
