@@ -48,8 +48,7 @@ async function buildMetaFiles() {
       await fs.copyFile(path.join(packageRoot, file), path.join(packageDist, file))
 
     const packageJSON = await fs.readJSON(path.join(packageRoot, 'package.json'))
-
-    for (const [key, value] of Object.keys(packageJSON.dependencies || {})) {
+    for (const [key, value] of Object.entries(packageJSON.dependencies || {})) {
       if (key.startsWith('@rcuse/')) {
         packageJSON.dependencies[key] = version
       }
