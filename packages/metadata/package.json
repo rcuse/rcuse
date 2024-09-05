@@ -2,11 +2,21 @@
   "name": "@rcuse/metadata",
   "version": "0.25.0",
   "description": "Metadata for RcUse functions",
+  "author": "wangxingkang <https://github.com/wangxingkang>",
+  "license": "MIT",
+  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/metadata#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rcuse/rcuse.git",
     "directory": "packages/metadata"
   },
+  "bugs": {
+    "url": "https://github.com/rcuse/rcuse/issues"
+  },
+  "keywords": [
+    "react",
+    "react-use"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -15,20 +25,10 @@
     },
     "./*": "./*"
   },
-  "keywords": [
-    "react",
-    "react-use"
-  ],
-  "bugs": {
-    "url": "https://github.com/rcuse/rcuse/issues"
-  },
-  "author": "wangxingkang <https://github.com/wangxingkang>",
-  "license": "MIT",
   "main": "./index.cjs",
   "module": "./index.mjs",
   "types": "./index.d.cts",
   "files": [
     "index.*"
-  ],
-  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/metadata#readme"
+  ]
 }

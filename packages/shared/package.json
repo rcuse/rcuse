@@ -33,7 +33,7 @@
   "types": "./index.d.cts",
   "dependencies": {
     "radash": "^12.1.0",
-    "type-fest": "^4.20.1",
+    "type-fest": "^4.26.0",
     "user-agent-data-types": "^0.4.2"
   }
 }

@@ -2,18 +2,9 @@
   "name": "@rcuse/integrations",
   "version": "0.25.0",
   "description": "Integration wrappers for utility libraries",
-  "main": "./index.cjs",
-  "module": "./index.mjs",
-  "unpkg": "./index.iife.min.js",
-  "jsdelivr": "./index.iife.min.js",
-  "types": "./index.d.cts",
-  "keywords": [
-    "react",
-    "react-use",
-    "utils"
-  ],
   "author": "wangxingkang <https://github.com/wangxingkang>",
   "license": "MIT",
+  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/integrations#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rcuse/rcuse.git",
@@ -22,6 +13,11 @@
   "bugs": {
     "url": "https://github.com/rcuse/rcuse/issues"
   },
+  "keywords": [
+    "react",
+    "react-use",
+    "utils"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -54,12 +50,17 @@
       "require": "./useCopyToClipboard.cjs"
     }
   },
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "unpkg": "./index.iife.min.js",
+  "jsdelivr": "./index.iife.min.js",
+  "types": "./index.d.cts",
   "peerDependencies": {
     "@pansy/copy-to-clipboard": "*",
     "@pansy/scrollbar-width": "*",
+    "mqtt": "^4",
     "nprogress": "*",
     "screenfull": "*",
-    "mqtt": "^4",
     "supercluster": ">=8"
   },
   "peerDependenciesMeta": {
@@ -75,10 +76,10 @@
     "nprogress": {
       "optional": true
     },
-    "supercluster": {
+    "screenfull": {
       "optional": true
     },
-    "screenfull": {
+    "supercluster": {
       "optional": true
     }
   },
@@ -87,14 +88,13 @@
     "@types/geojson": "*"
   },
   "devDependencies": {
-    "@types/nprogress": "^0.2.3",
-    "@types/supercluster": "^7.1.3",
     "@pansy/copy-to-clipboard": "^1.0.8",
     "@pansy/scrollbar-width": "^1.0.0",
+    "@types/nprogress": "^0.2.3",
+    "@types/supercluster": "^7.1.3",
     "mqtt": "^4.3.8",
     "nprogress": "^0.2.0",
     "screenfull": "^6.0.2",
     "supercluster": "^8.0.1"
-  },
-  "homepage": "https://github.com/rcuse/rcuse/tree/main/packages/integrations#readme"
+  }
 }
