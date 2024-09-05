@@ -32,8 +32,8 @@
   "jsdelivr": "./index.iife.min.js",
   "types": "./index.d.cts",
   "dependencies": {
-    "radash": "^12.1.0",
-    "type-fest": "^4.26.0",
-    "user-agent-data-types": "^0.4.2"
+    "radash": "catalog:",
+    "type-fest": "catalog:",
+    "user-agent-data-types": "catalog:"
   }
 }
