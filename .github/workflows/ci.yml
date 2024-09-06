@@ -41,6 +41,12 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: pnpm
 
+      - name: Setup
+        run: npm i -g @antfu/ni
+
+      - name: Install
+        run: nci
+
       - name: Install
         run: pnpm install
 
