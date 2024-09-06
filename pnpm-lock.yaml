@@ -189,6 +189,9 @@ catalogs:
     vitest:
       specifier: ^2.0.5
       version: 2.0.5
+    yaml:
+      specifier: ^2.5.1
+      version: 2.5.1
 
 importers:
 
@@ -357,7 +360,7 @@ importers:
         specifier: workspace:*
         version: link:scripts
       yaml:
-        specifier: ^2.5.1
+        specifier: 'catalog:'
         version: 2.5.1
 
   packages/core:
