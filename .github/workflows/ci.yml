@@ -47,9 +47,6 @@ jobs:
       - name: Install
         run: nci
 
-      - name: Install
-        run: pnpm install
-
       - name: Build
         run: pnpm build
 
