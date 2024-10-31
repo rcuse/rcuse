@@ -1,6 +1,8 @@
 import { useCallback } from 'react'
 import writeText from '@pansy/copy-to-clipboard'
-import { isNumber, isString, useMountedState, useSetState } from '@rcuse/core'
+import { useMountedState, useSetState } from '@rcuse/core'
+import { isString } from 'es-toolkit/predicate'
+import { isNumber } from 'es-toolkit/compat'
 
 interface CopyToClipboardState {
   value?: string

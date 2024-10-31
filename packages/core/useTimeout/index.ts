@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react'
-import { isNumber } from '@rcuse/shared'
+import { isNumber } from 'es-toolkit/compat'
 import { useMemoizedFn } from '../useMemoizedFn'
 
 export function useTimeout(fn: (...args: any[]) => void, delay?: number) {

@@ -1,6 +1,6 @@
 import type React from 'react'
 import { useMemo, useRef } from 'react'
-import { isFunction } from '@rcuse/shared'
+import { isFunction } from 'es-toolkit/predicate'
 import { useMemoizedFn } from '../useMemoizedFn'
 import { useUpdate } from '../useUpdate'
 

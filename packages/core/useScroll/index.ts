@@ -1,4 +1,5 @@
-import { type BasicTarget, getTargetElement } from '@rcuse/shared'
+import { getTargetElement } from '@rcuse/shared'
+import type { BasicTarget } from '@rcuse/shared'
 import { useRafState } from '../useRafState'
 import { useLatest } from '../useLatest'
 import { useEffectWithTarget } from '../helpers/useEffectWithTarget'

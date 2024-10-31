@@ -85,7 +85,8 @@
   },
   "dependencies": {
     "@rcuse/core": "workspace:*",
-    "@types/geojson": "*"
+    "@types/geojson": "*",
+    "es-toolkit": "catalog:"
   },
   "devDependencies": {
     "@pansy/copy-to-clipboard": "catalog:",

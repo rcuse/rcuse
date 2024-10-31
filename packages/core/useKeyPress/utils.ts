@@ -1,4 +1,5 @@
-import { isFunction, isNumber, isString } from '@rcuse/shared'
+import { isNumber } from 'es-toolkit/compat'
+import { isFunction, isString } from 'es-toolkit/predicate'
 import { aliasKeyCodeMap } from './config'
 import type { KeyEvent, KeyFilter, KeyPredicate, KeyType, Target } from './types'
 

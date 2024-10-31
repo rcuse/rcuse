@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isFunction, isUndefined } from '@rcuse/shared'
+import { isFunction, isUndefined } from 'es-toolkit/predicate'
 import { useEventListener } from '../useEventListener'
 import { useMemoizedFn } from '../useMemoizedFn'
 import { useUpdateEffect } from '../useUpdateEffect'

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useLatest } from '../useLatest';
-import { isNumber } from '@rcuse/shared'
+import { isNumber } from 'es-toolkit/compat'
 
 /**
  * 处理 setInterval 的 Hook。

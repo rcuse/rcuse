@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isNumber } from '@rcuse/shared'
+import { isNumber } from 'es-toolkit/compat'
 import { useMemoizedFn } from '../useMemoizedFn'
 
 interface Options {
