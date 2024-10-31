@@ -33,6 +33,7 @@
   "types": "./index.d.cts",
   "dependencies": {
     "@rcuse/shared": "workspace:*",
-    "@zag-js/element-size": "catalog:"
+    "@zag-js/element-size": "catalog:",
+    "es-toolkit": "catalog:"
   }
 }
