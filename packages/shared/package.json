@@ -32,7 +32,7 @@
   "jsdelivr": "./index.iife.min.js",
   "types": "./index.d.cts",
   "dependencies": {
-    "radash": "catalog:",
+    "es-toolkit": "catalog:",
     "type-fest": "catalog:",
     "user-agent-data-types": "catalog:"
   }

@@ -27,7 +27,7 @@
     "metadata": "walrus metadata",
     "update": "walrus update",
     "watch": "walrus build-run --watch",
-    "prepare": "husky || true"
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
@@ -78,6 +78,7 @@
     "rollup-plugin-esbuild": "catalog:",
     "rollup-plugin-pure": "catalog:",
     "simple-git": "catalog:",
+    "simple-git-hooks": "^2.11.1",
     "taze": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",
@@ -85,6 +86,9 @@
     "vitest": "catalog:",
     "walrus": "workspace:*",
     "yaml": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
