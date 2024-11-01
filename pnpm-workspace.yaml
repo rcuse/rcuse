@@ -56,7 +56,6 @@ catalog:
   rollup-plugin-dts: ^6.1.1
   rollup-plugin-esbuild: ^6.1.1
   rollup-plugin-pure: ^0.2.1
-  radash: ^12.1.0
   type-fest: ^4.26.1
   user-agent-data-types: ^0.4.2
   simple-git: ^3.27.0

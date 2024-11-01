@@ -1,5 +1,5 @@
 import type React from 'react'
-import { isFunction } from 'radash'
+import { isFunction } from 'es-toolkit/predicate'
 import { isClient } from '../utils'
 
 type TargetValue<T> = T | undefined | null
