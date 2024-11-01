@@ -92,7 +92,7 @@ export function genFilterKey(event: KeyboardEvent, keyFilter: KeyType, exactMatc
  */
 export function genKeyFormatter(keyFilter: KeyFilter, exactMatch: boolean): KeyPredicate {
   if (isFunction(keyFilter))
-    return keyFilter
+    return keyFilter as KeyPredicate
 
   if (isValidKeyType(keyFilter))
     return (event: KeyboardEvent) => genFilterKey(event, keyFilter as KeyType, exactMatch)
