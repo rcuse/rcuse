@@ -72,7 +72,7 @@ export function createUseStorageState(getStorage: () => Storage | undefined) {
       const currentState = isFunction(value) ? value(state) : value
 
       if (!listenStorageChange)
-        setState(currentState)
+        setState(currentState as T)
 
       try {
         let newValue: string | null
@@ -83,7 +83,7 @@ export function createUseStorageState(getStorage: () => Storage | undefined) {
           storage?.removeItem(key)
         }
         else {
-          newValue = serializer(currentState)
+          newValue = serializer(currentState as T)
           storage?.setItem(key, newValue)
         }
 
